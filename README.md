@@ -10,7 +10,9 @@
 ## Fitur Aplikasi Katalog Restoran :
 * Katalog Restoran
 * Detail Rsetoran
-* Favorite Restoran 
+* Favorite Restoran
+* Offline mode
+* Add to HomeScreen
 
 Dummy Restaurant API Reference From Dicoding
 <p>Demo Aplikasi : <a href="https://neizarkevin-daftresto-v2.netlify.app/">DaftResto</a></p>
