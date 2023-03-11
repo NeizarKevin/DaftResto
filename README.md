@@ -11,8 +11,13 @@
 * Katalog Restoran
 * Detail Rsetoran
 * Favorite Restoran
+* Search Favorite Restoran
 * Offline mode
 * Add to HomeScreen
+* Integration Test
+* End to End Test
+* Image Optimization
+* Bundle Optimization
 
 Dummy Restaurant API Reference From Dicoding
-<p>Demo Aplikasi : <a href="https://neizarkevin-daftresto-v2.netlify.app/">DaftResto</a></p>
+<p>Demo Aplikasi : <a href="https://neizarkevin-daftresto.netlify.app/">DaftResto</a></p>
