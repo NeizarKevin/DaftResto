@@ -31,6 +31,6 @@ class RestaurantDbSource {
       };
     }
   }
-}
+};
 
 export default RestaurantDbSource;

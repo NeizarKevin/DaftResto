@@ -30,12 +30,8 @@ class Appbar extends HTMLElement {
     <div class="hero_inner">
       <p class="hero_title">Daft Resto</p>
       <p class="hero_tagline">
-        Discover new restaurants. Easy search by location, cuisine and rating.
+      Discover a world of culinary delights with our restaurant catalog.
       </p>
-      <form class="form-search" id="form-search">
-        <input class="search" type="text" placeholder="Search Restaurant..." />
-        <button class="btnSearch" type="submit"><i class="fa fa-search"></i></button>
-      </form>
     </div>
   </div>
         `;
