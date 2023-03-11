@@ -3,14 +3,14 @@ import CONFIG from '../../global/config';
 import DetailHelper from '../../utils/detail-helper';
 
 const createRestaurantDetailTemplate = (restaurant) => `
-<img class="restaurant-picture" crossorigin="anonymous" alt="${restaurant.name}" src="${
+<img class="restaurant-picture lazyload" crossorigin="anonymous" alt="${restaurant.name}" src="${
   CONFIG.BASE_IMAGE_URL + restaurant.pictureId
 }" tabindex="0" >
 <div class="detailRestaurant">
     <div class="detailRestaurant-info">
         <div class="detailRestaurant-name">
             <h2><i class="fas fa-store"></i> Restaurant Name</h2>
-            <p>${restaurant.name}</p>
+            <p class="list-item__title">${restaurant.name}</p>
         </div>
         <div class="detailRestaurant-address">
             <h2><i class="far fa-compass"></i> Restaurant Address</h2>
@@ -25,9 +25,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <p class="restaurant-description">${restaurant.description}</p>
 </div>
 <div class="restaurant-categories">
-    ${restaurant.categories.map((category) => `
+    ${restaurant.categories
+      .map(
+        (category) => `
         <span class="restaurant-category-title">${category.name}</span>
-    `).join('')}
+    `
+      )
+      .join('')}
 </div>
 
 <div class="detailRestaurant-menu">
@@ -36,16 +40,24 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant-menu">
         <ul>
             <h3>Food</h3>
-            ${restaurant.menus.foods.map((food) => `
+            ${restaurant.menus.foods
+              .map(
+                (food) => `
             <li><p><i class="fa-solid fa-utensils"></i> ${food.name}</p></li>
-            `).join('')}
+            `
+              )
+              .join('')}
         </ul>
 
         <ul>
             <h3>Beverage</h3>
-            ${restaurant.menus.drinks.map((drink) => `
+            ${restaurant.menus.drinks
+              .map(
+                (drink) => `
             <li><p><i class="fas fa-cocktail"></i> ${drink.name}</p></li>
-            `).join('')}
+            `
+              )
+              .join('')}
         </ul>
     </div>
 </div>
@@ -70,13 +82,13 @@ const createRestaurantListTemplate = (restaurant) => `
     <article class="list-item">
     <a href="#/detail/${restaurant.id}">
           <div class="list-thumbnail">
-              <img class="list-item__thumbnail" tabindex="0" class="card-image" crossorigin="anonymous" alt="${restaurant.name}" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
-              <p class="list-item_rate"><i title="ratings" class="fa fa-star card-rating"></i>  ${restaurant.rating}</p>
+              <img class="list-item__thumbnail lazyload" tabindex="0" class="card-image" crossorigin="anonymous" alt="${ restaurant.name || '-' }" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+              <p class="list-item_rate"><i title="ratings" class="fa fa-star card-rating"></i>  ${ restaurant.rating || '-' }</p>
           </div>
           <div class="list-item__content">
-              <p class="list-city"> ${restaurant.city}</p>
-              <h2 class="list-item__title">${restaurant.name}</h2>
-              <p class="list-item__description">${restaurant.description}...</p>
+              <p class="list-city"> ${restaurant.city || '-'}</p>
+              <h2 class="list-item__title">${restaurant.name || '-' }</h2>
+              <p class="list-item__description">${restaurant.description || '-'}...</p>
           </div>
     </a>
     </article>
@@ -98,14 +110,14 @@ const createCustomerReviewFormTemplate = () => `<form class="form-review" id="fo
 </form>
 `;
 
-const createLikeButtonTemplate = () => `
-  <button aria-label="like this movie" id="likeButton" class="like">
+const createLikeRestaurantButtonTemplate = () => `
+  <button aria-label="like this restaurant" id="likeButton" class="like">
   <i class="far fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
-const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likeButton" class="like">
+const createUnlikeRestaurantButtonTemplate = () => `
+  <button aria-label="unlike this restaurant" id="likeButton" class="like">
   <i class="fas fa-heart" aria-hidden="true"></i>
   </button>
 `;
@@ -115,6 +127,6 @@ export {
   createRestaurantListTemplate,
   createCustomerReviewTemplate,
   createCustomerReviewFormTemplate,
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createLikeRestaurantButtonTemplate,
+  createUnlikeRestaurantButtonTemplate,
 };

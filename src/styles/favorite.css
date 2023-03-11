@@ -1,0 +1,33 @@
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.search input {
+    height: 40px;
+    border: 1px solid #FF2E63;
+    border-radius: 30px;
+    padding: 0 16px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.content__heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-item__not__found {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 130px;
+    margin-bottom: 200px;
+}

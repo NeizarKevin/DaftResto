@@ -7,18 +7,20 @@ import '../styles/footer.css';
 import '../styles/skipcontent.css';
 import '../styles/loader.css';
 import '../styles/detail.css';
+import '../styles/favorite.css';
 import '../styles/list.css';
 import '../styles/card.css';
 import '../styles/main.css';
 import '../styles/responsive.css';
 
 import './components/appbar-component';
-import './components/hero-component';
 import './components/drawer-component';
 import './components/footer-component';
 import './components/skipcontent-component';
 import App from './views/app';
 import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const app = new App({
   button: document.querySelector('#menu_resp'),
