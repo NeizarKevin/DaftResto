@@ -1,1 +1,1746 @@
-(self.webpackChunkrestaurant_apps=self.webpackChunkrestaurant_apps||[]).push([[576],{3645:e=>{"use strict";e.exports=function(r){var u=[];return u.toString=function(){return this.map(function(e){var t="",n=void 0!==e[5];return e[4]&&(t+="@supports (".concat(e[4],") {")),e[2]&&(t+="@media ".concat(e[2]," {")),n&&(t+="@layer".concat(0<e[5].length?" ".concat(e[5]):""," {")),t+=r(e),n&&(t+="}"),e[2]&&(t+="}"),e[4]&&(t+="}"),t}).join("")},u.i=function(e,t,n,r,a){"string"==typeof e&&(e=[[null,e,void 0]]);var i={};if(n)for(var o=0;o<this.length;o++){var s=this[o][0];null!=s&&(i[s]=!0)}for(var c=0;c<e.length;c++){var l=[].concat(e[c]);n&&i[l[0]]||(void 0!==a&&(void 0!==l[5]&&(l[1]="@layer".concat(0<l[5].length?" ".concat(l[5]):""," {").concat(l[1],"}")),l[5]=a),t&&(l[2]&&(l[1]="@media ".concat(l[2]," {").concat(l[1],"}")),l[2]=t),r&&(l[4]?(l[1]="@supports (".concat(l[4],") {").concat(l[1],"}"),l[4]=r):l[4]="".concat(r)),u.push(l))}},u}},1667:e=>{"use strict";e.exports=function(e,t){return t=t||{},e&&(e=String(e.__esModule?e.default:e),/^['"].*['"]$/.test(e)&&(e=e.slice(1,-1)),t.hash&&(e+=t.hash),/["'() \t\n]|(%20)/.test(e)||t.needQuotes?'"'.concat(e.replace(/"/g,'\\"').replace(/\n/g,"\\n"),'"'):e)}},7537:e=>{"use strict";e.exports=function(e){var t=e[1],e=e[3];return e?("function"==typeof btoa?(e=btoa(unescape(encodeURIComponent(JSON.stringify(e)))),e="sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(e),e="/*# ".concat(e," */"),[t].concat([e])):[t]).join("\n"):t}},7090:e=>{var t="undefined"!=typeof window?window:{},n=function(r,f,i){"use strict";var p,h,e,m,F,a,v,t,u,W,o,P,j,n,R,s,d,g,y,b,z,C,O,w,$,H,q,U,c,l,V,K,Q,E,J,A,X,G,Y,M,L,x,I,Z,ee,te,ne,re,N,ae,ie,oe,se,S,D,_,ce,B,le,ue,de,T,fe,pe,he,me,ve,k,ge={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",fastLoadedClass:"ls-is-cached",iframeLoadMode:0,srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0,ricTimeout:0,throttleDelay:125};for(e in h=r.lazySizesConfig||r.lazysizesConfig||{},ge)e in h||(h[e]=ge[e]);return f&&f.getElementsByClassName?(m=f.documentElement,F=r.HTMLPictureElement,v="getAttribute",t=r[a="addEventListener"].bind(r),u=r.setTimeout,W=r.requestAnimationFrame||u,o=r.requestIdleCallback,P=/^picture$/i,j=["load","error","lazyincluded","_lazyloaded"],n={},R=Array.prototype.forEach,s=function(e,t){return n[t]||(n[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")),n[t].test(e[v]("class")||"")&&n[t]},d=function(e,t){s(e,t)||e.setAttribute("class",(e[v]("class")||"").trim()+" "+t)},g=function(e,t){(t=s(e,t))&&e.setAttribute("class",(e[v]("class")||"").replace(t," "))},y=function(t,n,e){var r=e?a:"removeEventListener";e&&y(t,n),j.forEach(function(e){t[r](e,n)})},b=function(e,t,n,r,a){var i=f.createEvent("Event");return(n=n||{}).instance=p,i.initEvent(t,!r,!a),i.detail=n,e.dispatchEvent(i),i},z=function(e,t){var n;!F&&(n=r.picturefill||h.pf)?(t&&t.src&&!e[v]("srcset")&&e.setAttribute("srcset",t.src),n({reevaluate:!0,elements:[e]})):t&&t.src&&(e.src=t.src)},C=function(e,t){return(getComputedStyle(e,null)||{})[t]},O=function(e,t,n){for(n=n||e.offsetWidth;n<h.minSize&&t&&!e._lazysizesWidth;)n=t.offsetWidth,t=t.parentNode;return n},U=[],c=q=[],be._lsFlush=ye,w=be,l=function(n,e){return e?function(){w(n)}:function(){var e=this,t=arguments;w(function(){n.apply(e,t)})}},V=function(e){function t(){var e=i.now()-r;e<99?u(t,99-e):(o||a)(a)}var n,r,a=function(){n=null,e()};return function(){r=i.now(),n=n||u(t,99)}},ie=/^img$/i,oe=/^iframe$/i,se="onscroll"in r&&!/(gle|ing)bot/.test(navigator.userAgent),_=-1,ce=function(e){return(Z=null==Z?"hidden"==C(f.body,"visibility"):Z)||!("hidden"==C(e.parentNode,"visibility")&&"hidden"==C(e,"visibility"))},ee=Ce,ne=D=S=0,re=h.throttleDelay,N=h.ricTimeout,ae=o&&49<N?function(){o(we,{timeout:N}),N!==h.ricTimeout&&(N=h.ricTimeout)}:l(function(){u(we)},!0),le=l(Ee),ue=function(e){le({target:e.target})},de=l(function(t,e,n,r,a){var i,o,s,c,l;(o=b(t,"lazybeforeunveil",e)).defaultPrevented||(r&&(n?d(t,h.autosizesClass):t.setAttribute("sizes",r)),n=t[v](h.srcsetAttr),r=t[v](h.srcAttr),a&&(i=(c=t.parentNode)&&P.test(c.nodeName||"")),s=e.firesLoad||"src"in t&&(n||r||i),o={target:t},d(t,h.loadingClass),s&&(clearTimeout(J),J=u(ze,2500),y(t,ue,!0)),i&&R.call(c.getElementsByTagName("source"),Ae),n?t.setAttribute("srcset",n):r&&!i&&(oe.test(t.nodeName)?(e=r,0==(l=(c=t).getAttribute("data-load-mode")||h.iframeLoadMode)?c.contentWindow.location.replace(e):1==l&&(c.src=e)):t.src=r),a&&(n||i)&&z(t,{src:r})),t._lazyRace&&delete t._lazyRace,g(t,h.lazyClass),w(function(){var e=t.complete&&1<t.naturalWidth;s&&!e||(e&&d(t,h.fastLoadedClass),Ee(o),t._lazyCache=!0,u(function(){"_lazyCache"in t&&delete t._lazyCache},9)),"lazy"==t.loading&&D--},!0)}),fe=V(function(){h.loadMode=3,B()}),K={_:function(){X=i.now(),p.elements=f.getElementsByClassName(h.lazyClass),Q=f.getElementsByClassName(h.lazyClass+" "+h.preloadClass),t("scroll",B,!0),t("resize",B,!0),t("pageshow",function(e){var t;e.persisted&&(t=f.querySelectorAll("."+h.loadingClass)).length&&t.forEach&&W(function(){t.forEach(function(e){e.complete&&T(e)})})}),r.MutationObserver?new MutationObserver(B).observe(m,{childList:!0,subtree:!0,attributes:!0}):(m[a]("DOMNodeInserted",B,!0),m[a]("DOMAttrModified",B,!0),setInterval(B,999)),t("hashchange",B,!0),["focus","mouseover","click","load","transitionend","animationend"].forEach(function(e){f[a](e,B,!0)}),/d$|^c/.test(f.readyState)?Le():(t("load",Le),f[a]("DOMContentLoaded",B),u(Le,2e4)),p.elements.length?(Ce(),w._lsFlush()):B()},checkElems:B=function(e){var t;(e=!0===e)&&(N=33),te||(te=!0,(t=re-(i.now()-ne))<0&&(t=0),e||t<9?ae():u(ae,t))},unveil:T=function(e){var t,n,r,a;e._lazyRace||!(!(a="auto"==(r=(n=ie.test(e.nodeName))&&(e[v](h.sizesAttr)||e[v]("sizes"))))&&E||!n||!e[v]("src")&&!e.srcset||e.complete||s(e,h.errorClass))&&s(e,h.lazyClass)||(t=b(e,"lazyunveilread").detail,a&&pe.updateElem(e,!0,e.offsetWidth),e._lazyRace=!0,D++,de(e,t,a,r,n))},_aLSL:Me},me=l(function(e,t,n,r){var a,i,o;if(e._lazysizesWidth=r,e.setAttribute("sizes",r+="px"),P.test(t.nodeName||""))for(i=0,o=(a=t.getElementsByTagName("source")).length;i<o;i++)a[i].setAttribute("sizes",r);n.detail.dataAttr||z(e,n.detail)}),pe={_:function(){he=f.getElementsByClassName(h.autosizesClass),t("resize",ve)},checkElems:ve=V(function(){var e,t=he.length;if(t)for(e=0;e<t;e++)xe(he[e])}),updateElem:xe},k=function(){!k.i&&f.getElementsByClassName&&(k.i=!0,pe._(),K._())},u(function(){h.init&&k()}),p={cfg:h,autoSizer:pe,loader:K,init:k,uP:z,aC:d,rC:g,hC:s,fire:b,gW:O,rAF:w}):{init:function(){},cfg:h,noSupport:!0};function ye(){var e=c;for(c=q.length?U:q,H=!($=!0);e.length;)e.shift()();$=!1}function be(e,t){$&&!t?e.apply(this,arguments):(c.push(e),H||(H=!0,(f.hidden?u:W)(ye)))}function ze(e){D--,e&&!(D<0)&&e.target||(D=0)}function Ce(){var e,t,n,r,a,i,o,s,c,l,u,d=p.elements;if((A=h.loadMode)&&D<8&&(e=d.length)){for(t=0,_++;t<e;t++)if(d[t]&&!d[t]._lazyRace)if(!se||p.prematureUnveil&&p.prematureUnveil(d[t]))T(d[t]);else if((o=d[t][v]("data-expand"))&&(a=+o)||(a=S),c||(c=!h.expand||h.expand<1?500<m.clientHeight&&500<m.clientWidth?500:370:h.expand,l=(p._defEx=c)*h.expFactor,u=h.hFac,Z=null,S<l&&D<1&&2<_&&2<A&&!f.hidden?(S=l,_=0):S=1<A&&1<_&&D<6?c:0),s!==a&&(G=innerWidth+a*u,Y=innerHeight+a,i=-1*a,s=a),l=d[t].getBoundingClientRect(),(I=l.bottom)>=i&&(M=l.top)<=Y&&(x=l.right)>=i*u&&(L=l.left)<=G&&(I||x||L||M)&&(h.loadHidden||ce(d[t]))&&(E&&D<3&&!o&&(A<3||_<4)||function(e,t){var n,r=e,a=ce(e);for(M-=t,I+=t,L-=t,x+=t;a&&(r=r.offsetParent)&&r!=f.body&&r!=m;)(a=0<(C(r,"opacity")||1))&&"visible"!=C(r,"overflow")&&(n=r.getBoundingClientRect(),a=x>n.left&&L<n.right&&I>n.top-1&&M<n.bottom+1);return a}(d[t],a))){if(T(d[t]),r=!0,9<D)break}else!r&&E&&!n&&D<4&&_<4&&2<A&&(Q[0]||h.preloadAfterLoad)&&(Q[0]||!o&&(I||x||L||M||"auto"!=d[t][v](h.sizesAttr)))&&(n=Q[0]||d[t]);n&&!r&&T(n)}}function we(){te=!1,ne=i.now(),ee()}function Ee(e){var t=e.target;t._lazyCache?delete t._lazyCache:(ze(e),d(t,h.loadedClass),g(t,h.loadingClass),y(t,ue),b(t,"lazyloaded"))}function Ae(e){var t,n=e[v](h.srcsetAttr);(t=h.customMedia[e[v]("data-media")||e[v]("media")])&&e.setAttribute("media",t),n&&e.setAttribute("srcset",n)}function Me(){3==h.loadMode&&(h.loadMode=2),fe()}function Le(){E||(i.now()-X<999?u(Le,999):(E=!0,h.loadMode=3,B(),t("scroll",Me,!0)))}function xe(e,t,n){var r=e.parentNode;r&&(n=O(e,r,n),(t=b(e,"lazybeforesizes",{width:n,dataAttr:!!t})).defaultPrevented||(n=t.detail.width)&&n!==e._lazysizesWidth&&me(e,r,t,n))}};n=n(t,t.document,Date),t.lazySizes=n,e.exports&&(e.exports=n)},1770:(e,t,n)=>{var r,a;r="undefined"!=typeof window?window:0,a=function(c,e,n){"use strict";var l,o,s,u,d,f;c.addEventListener&&(l=/\s+(\d+)(w|h)\s+(\d+)(w|h)/,o=/parent-fit["']*\s*:\s*["']*(contain|cover|width)/,s=/parent-container["']*\s*:\s*["']*(.+?)(?=(\s|$|,|'|"|;))/,u=/^picture$/i,d=n.cfg,f={getParent:function(e,t){var n=e,r=e.parentNode;return t&&"prev"!=t||!r||!u.test(r.nodeName||"")||(r=r.parentNode),n="self"!=t?"prev"==t?e.previousElementSibling:t&&(r.closest||c.jQuery)&&(r.closest?r.closest(t):jQuery(r).closest(t)[0])||r:n},getFit:function(e){var t,n,r=getComputedStyle(e,null)||{},a=r.content||r.fontFamily,i={fit:e._lazysizesParentFit||e.getAttribute("data-parent-fit")};return!i.fit&&a&&(t=a.match(o))&&(i.fit=t[1]),i.fit?(!(n=e._lazysizesParentContainer||e.getAttribute("data-parent-container"))&&a&&(t=a.match(s))&&(n=t[1]),i.parent=f.getParent(e,n)):i.fit=r.objectFit,i},getImageRatio:function(e){for(var t,n,r,a,i=e.parentNode,o=i&&u.test(i.nodeName||"")?i.querySelectorAll("source, img"):[e],s=0;s<o.length;s++)if(a=(e=o[s]).getAttribute(d.srcsetAttr)||e.getAttribute("srcset")||e.getAttribute("data-pfsrcset")||e.getAttribute("data-risrcset")||"",n=e._lsMedia||e.getAttribute("media"),n=d.customMedia[e.getAttribute("data-media")||n]||n,a&&(!n||(c.matchMedia&&matchMedia(n)||{}).matches)){(t=parseFloat(e.getAttribute("data-aspectratio")))||(a=(n=a.match(l))?"w"==n[2]?(r=n[1],n[3]):(r=n[3],n[1]):(r=e.getAttribute("width"),e.getAttribute("height")),t=r/a);break}return t},calculateSize:function(e,t){var n,r=this.getFit(e),a=r.fit,r=r.parent;return"width"==a||("contain"==a||"cover"==a)&&(n=this.getImageRatio(e))?(r?t=r.clientWidth:r=e,e=t,"width"==a?e=t:(r=t/r.clientHeight)&&("cover"==a&&r<n||"contain"==a&&n<r)&&(e=t*(n/r)),e):t}},n.parentFit=f,e.addEventListener("lazybeforesizes",function(e){var t;e.defaultPrevented||e.detail.instance!=n||(t=e.target,e.detail.width=f.calculateSize(t,e.detail.width))}))},r&&(a=a.bind(null,r,r.document),e.exports?a(n(7090)):(r=[n(7090)],void 0!==(a="function"==typeof(n=a)?n.apply(t,r):n)&&(e.exports=a)))},3379:e=>{"use strict";var l=[];function u(e){for(var t=-1,n=0;n<l.length;n++)if(l[n].identifier===e){t=n;break}return t}function s(e,t){for(var n={},r=[],a=0;a<e.length;a++){var i=e[a],o=t.base?i[0]+t.base:i[0],s=n[o]||0,c="".concat(o," ").concat(s),o=(n[o]=s+1,u(c)),s={css:i[1],media:i[2],sourceMap:i[3],supports:i[4],layer:i[5]};-1!==o?(l[o].references++,l[o].updater(s)):(i=function(t,e){var n=e.domAPI(e);return n.update(t),function(e){e?e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap&&e.supports===t.supports&&e.layer===t.layer||n.update(t=e):n.remove()}}(s,t),t.byIndex=a,l.splice(a,0,{identifier:c,updater:i,references:1})),r.push(c)}return r}e.exports=function(e,i){var o=s(e=e||[],i=i||{});return function(e){e=e||[];for(var t=0;t<o.length;t++){var n=u(o[t]);l[n].references--}for(var e=s(e,i),r=0;r<o.length;r++){var a=u(o[r]);0===l[a].references&&(l[a].updater(),l.splice(a,1))}o=e}}},569:e=>{"use strict";var n={};e.exports=function(e,t){if(!(e=function(e){if(void 0===n[e]){var t=document.querySelector(e);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(e){t=null}n[e]=t}return n[e]}(e)))throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");e.appendChild(t)}},9216:e=>{"use strict";e.exports=function(e){var t=document.createElement("style");return e.setAttributes(t,e.attributes),e.insert(t,e.options),t}},3565:(e,t,n)=>{"use strict";e.exports=function(e){var t=n.nc;t&&e.setAttribute("nonce",t)}},7795:e=>{"use strict";e.exports=function(i){var o=i.insertStyleElement(i);return{update:function(e){var t,n,r,a;t=o,n=i,r="",(e=e).supports&&(r+="@supports (".concat(e.supports,") {")),e.media&&(r+="@media ".concat(e.media," {")),(a=void 0!==e.layer)&&(r+="@layer".concat(0<e.layer.length?" ".concat(e.layer):""," {")),r+=e.css,a&&(r+="}"),e.media&&(r+="}"),e.supports&&(r+="}"),(a=e.sourceMap)&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(a))))," */")),n.styleTagTransform(r,t,n.options)},remove:function(){var e;null!==(e=o).parentNode&&e.parentNode.removeChild(e)}}}},4589:e=>{"use strict";e.exports=function(e,t){if(t.styleSheet)t.styleSheet.cssText=e;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(e))}}},4424:(e,t,n)=>{"use strict";n.d(t,{X3:()=>function(e,t,{blocked:n,upgrade:r,blocking:a,terminated:i}={}){const o=indexedDB.open(e,t),s=h(o);r&&o.addEventListener("upgradeneeded",e=>{r(h(o.result),e.oldVersion,e.newVersion,h(o.transaction),e)});n&&o.addEventListener("blocked",e=>n(e.oldVersion,e.newVersion,e));return s.then(e=>{i&&e.addEventListener("close",()=>i()),a&&e.addEventListener("versionchange",e=>a(e.oldVersion,e.newVersion,e))}).catch(()=>{}),s}});const r=(t,e)=>e.some(e=>t instanceof e);let a,i;const o=new WeakMap,s=new WeakMap,c=new WeakMap,l=new WeakMap,u=new WeakMap;let d={get(e,t,n){if(e instanceof IDBTransaction){if("done"===t)return s.get(e);if("objectStoreNames"===t)return e.objectStoreNames||c.get(e);if("store"===t)return n.objectStoreNames[1]?void 0:n.objectStore(n.objectStoreNames[0])}return h(e[t])},set(e,t,n){return e[t]=n,!0},has(e,t){return e instanceof IDBTransaction&&("done"===t||"store"===t)||t in e}};function f(n){return n!==IDBDatabase.prototype.transaction||"objectStoreNames"in IDBTransaction.prototype?(i=i||[IDBCursor.prototype.advance,IDBCursor.prototype.continue,IDBCursor.prototype.continuePrimaryKey]).includes(n)?function(...e){return n.apply(m(this),e),h(o.get(this))}:function(...e){return h(n.apply(m(this),e))}:function(e,...t){t=n.call(m(this),e,...t);return c.set(t,e.sort?e.sort():[e]),h(t)}}function p(e){var i,t;return"function"==typeof e?f(e):(e instanceof IDBTransaction&&(i=e,s.has(i)||(t=new Promise((e,t)=>{const n=()=>{i.removeEventListener("complete",r),i.removeEventListener("error",a),i.removeEventListener("abort",a)},r=()=>{e(),n()},a=()=>{t(i.error||new DOMException("AbortError","AbortError")),n()};i.addEventListener("complete",r),i.addEventListener("error",a),i.addEventListener("abort",a)}),s.set(i,t))),r(e,a=a||[IDBDatabase,IDBObjectStore,IDBIndex,IDBCursor,IDBTransaction])?new Proxy(e,d):e)}function h(e){var i,t;return e instanceof IDBRequest?(i=e,(t=new Promise((e,t)=>{const n=()=>{i.removeEventListener("success",r),i.removeEventListener("error",a)},r=()=>{e(h(i.result)),n()},a=()=>{t(i.error),n()};i.addEventListener("success",r),i.addEventListener("error",a)})).then(e=>{e instanceof IDBCursor&&o.set(e,i)}).catch(()=>{}),u.set(t,i),t):l.has(e)?l.get(e):((t=p(e))!==e&&(l.set(e,t),u.set(t,e)),t)}const m=e=>u.get(e);const v=["get","getKey","getAll","getAllKeys","count"],g=["put","add","delete","clear"],y=new Map;function b(e,t){if(e instanceof IDBDatabase&&!(t in e)&&"string"==typeof t){if(y.get(t))return y.get(t);const r=t.replace(/FromIndex$/,""),a=t!==r,i=g.includes(r);return r in(a?IDBIndex:IDBObjectStore).prototype&&(i||v.includes(r))?(e=async function(e,...t){e=this.transaction(e,i?"readwrite":"readonly");let n=e.store;return a&&(n=n.index(t.shift())),(await Promise.all([n[r](...t),i&&e.done]))[0]},y.set(t,e),e):void 0}}var z;d={...z=d,get:(e,t,n)=>b(e,t)||z.get(e,t,n),has:(e,t)=>!!b(e,t)||z.has(e,t)}}}]);
+(self["webpackChunkrestaurant_apps"] = self["webpackChunkrestaurant_apps"] || []).push([[576],{
+
+/***/ 3645:
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
+
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
+};
+
+/***/ }),
+
+/***/ 1667:
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+
+/***/ 7537:
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+  if (!cssMapping) {
+    return content;
+  }
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    return [content].concat([sourceMapping]).join("\n");
+  }
+  return [content].join("\n");
+};
+
+/***/ }),
+
+/***/ 7090:
+/***/ ((module) => {
+
+(function(window, factory) {
+	var lazySizes = factory(window, window.document, Date);
+	window.lazySizes = lazySizes;
+	if( true && module.exports){
+		module.exports = lazySizes;
+	}
+}(typeof window != 'undefined' ?
+      window : {}, 
+/**
+ * import("./types/global")
+ * @typedef { import("./types/lazysizes-config").LazySizesConfigPartial } LazySizesConfigPartial
+ */
+function l(window, document, Date) { // Pass in the window Date function also for SSR because the Date class can be lost
+	'use strict';
+	/*jshint eqnull:true */
+
+	var lazysizes,
+		/**
+		 * @type { LazySizesConfigPartial }
+		 */
+		lazySizesCfg;
+
+	(function(){
+		var prop;
+
+		var lazySizesDefaults = {
+			lazyClass: 'lazyload',
+			loadedClass: 'lazyloaded',
+			loadingClass: 'lazyloading',
+			preloadClass: 'lazypreload',
+			errorClass: 'lazyerror',
+			//strictClass: 'lazystrict',
+			autosizesClass: 'lazyautosizes',
+			fastLoadedClass: 'ls-is-cached',
+			iframeLoadMode: 0,
+			srcAttr: 'data-src',
+			srcsetAttr: 'data-srcset',
+			sizesAttr: 'data-sizes',
+			//preloadAfterLoad: false,
+			minSize: 40,
+			customMedia: {},
+			init: true,
+			expFactor: 1.5,
+			hFac: 0.8,
+			loadMode: 2,
+			loadHidden: true,
+			ricTimeout: 0,
+			throttleDelay: 125,
+		};
+
+		lazySizesCfg = window.lazySizesConfig || window.lazysizesConfig || {};
+
+		for(prop in lazySizesDefaults){
+			if(!(prop in lazySizesCfg)){
+				lazySizesCfg[prop] = lazySizesDefaults[prop];
+			}
+		}
+	})();
+
+	if (!document || !document.getElementsByClassName) {
+		return {
+			init: function () {},
+			/**
+			 * @type { LazySizesConfigPartial }
+			 */
+			cfg: lazySizesCfg,
+			/**
+			 * @type { true }
+			 */
+			noSupport: true,
+		};
+	}
+
+	var docElem = document.documentElement;
+
+	var supportPicture = window.HTMLPictureElement;
+
+	var _addEventListener = 'addEventListener';
+
+	var _getAttribute = 'getAttribute';
+
+	/**
+	 * Update to bind to window because 'this' becomes null during SSR
+	 * builds.
+	 */
+	var addEventListener = window[_addEventListener].bind(window);
+
+	var setTimeout = window.setTimeout;
+
+	var requestAnimationFrame = window.requestAnimationFrame || setTimeout;
+
+	var requestIdleCallback = window.requestIdleCallback;
+
+	var regPicture = /^picture$/i;
+
+	var loadEvents = ['load', 'error', 'lazyincluded', '_lazyloaded'];
+
+	var regClassCache = {};
+
+	var forEach = Array.prototype.forEach;
+
+	/**
+	 * @param ele {Element}
+	 * @param cls {string}
+	 */
+	var hasClass = function(ele, cls) {
+		if(!regClassCache[cls]){
+			regClassCache[cls] = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+		}
+		return regClassCache[cls].test(ele[_getAttribute]('class') || '') && regClassCache[cls];
+	};
+
+	/**
+	 * @param ele {Element}
+	 * @param cls {string}
+	 */
+	var addClass = function(ele, cls) {
+		if (!hasClass(ele, cls)){
+			ele.setAttribute('class', (ele[_getAttribute]('class') || '').trim() + ' ' + cls);
+		}
+	};
+
+	/**
+	 * @param ele {Element}
+	 * @param cls {string}
+	 */
+	var removeClass = function(ele, cls) {
+		var reg;
+		if ((reg = hasClass(ele,cls))) {
+			ele.setAttribute('class', (ele[_getAttribute]('class') || '').replace(reg, ' '));
+		}
+	};
+
+	var addRemoveLoadEvents = function(dom, fn, add){
+		var action = add ? _addEventListener : 'removeEventListener';
+		if(add){
+			addRemoveLoadEvents(dom, fn);
+		}
+		loadEvents.forEach(function(evt){
+			dom[action](evt, fn);
+		});
+	};
+
+	/**
+	 * @param elem { Element }
+	 * @param name { string }
+	 * @param detail { any }
+	 * @param noBubbles { boolean }
+	 * @param noCancelable { boolean }
+	 * @returns { CustomEvent }
+	 */
+	var triggerEvent = function(elem, name, detail, noBubbles, noCancelable){
+		var event = document.createEvent('Event');
+
+		if(!detail){
+			detail = {};
+		}
+
+		detail.instance = lazysizes;
+
+		event.initEvent(name, !noBubbles, !noCancelable);
+
+		event.detail = detail;
+
+		elem.dispatchEvent(event);
+		return event;
+	};
+
+	var updatePolyfill = function (el, full){
+		var polyfill;
+		if( !supportPicture && ( polyfill = (window.picturefill || lazySizesCfg.pf) ) ){
+			if(full && full.src && !el[_getAttribute]('srcset')){
+				el.setAttribute('srcset', full.src);
+			}
+			polyfill({reevaluate: true, elements: [el]});
+		} else if(full && full.src){
+			el.src = full.src;
+		}
+	};
+
+	var getCSS = function (elem, style){
+		return (getComputedStyle(elem, null) || {})[style];
+	};
+
+	/**
+	 *
+	 * @param elem { Element }
+	 * @param parent { Element }
+	 * @param [width] {number}
+	 * @returns {number}
+	 */
+	var getWidth = function(elem, parent, width){
+		width = width || elem.offsetWidth;
+
+		while(width < lazySizesCfg.minSize && parent && !elem._lazysizesWidth){
+			width =  parent.offsetWidth;
+			parent = parent.parentNode;
+		}
+
+		return width;
+	};
+
+	var rAF = (function(){
+		var running, waiting;
+		var firstFns = [];
+		var secondFns = [];
+		var fns = firstFns;
+
+		var run = function(){
+			var runFns = fns;
+
+			fns = firstFns.length ? secondFns : firstFns;
+
+			running = true;
+			waiting = false;
+
+			while(runFns.length){
+				runFns.shift()();
+			}
+
+			running = false;
+		};
+
+		var rafBatch = function(fn, queue){
+			if(running && !queue){
+				fn.apply(this, arguments);
+			} else {
+				fns.push(fn);
+
+				if(!waiting){
+					waiting = true;
+					(document.hidden ? setTimeout : requestAnimationFrame)(run);
+				}
+			}
+		};
+
+		rafBatch._lsFlush = run;
+
+		return rafBatch;
+	})();
+
+	var rAFIt = function(fn, simple){
+		return simple ?
+			function() {
+				rAF(fn);
+			} :
+			function(){
+				var that = this;
+				var args = arguments;
+				rAF(function(){
+					fn.apply(that, args);
+				});
+			}
+		;
+	};
+
+	var throttle = function(fn){
+		var running;
+		var lastTime = 0;
+		var gDelay = lazySizesCfg.throttleDelay;
+		var rICTimeout = lazySizesCfg.ricTimeout;
+		var run = function(){
+			running = false;
+			lastTime = Date.now();
+			fn();
+		};
+		var idleCallback = requestIdleCallback && rICTimeout > 49 ?
+			function(){
+				requestIdleCallback(run, {timeout: rICTimeout});
+
+				if(rICTimeout !== lazySizesCfg.ricTimeout){
+					rICTimeout = lazySizesCfg.ricTimeout;
+				}
+			} :
+			rAFIt(function(){
+				setTimeout(run);
+			}, true)
+		;
+
+		return function(isPriority){
+			var delay;
+
+			if((isPriority = isPriority === true)){
+				rICTimeout = 33;
+			}
+
+			if(running){
+				return;
+			}
+
+			running =  true;
+
+			delay = gDelay - (Date.now() - lastTime);
+
+			if(delay < 0){
+				delay = 0;
+			}
+
+			if(isPriority || delay < 9){
+				idleCallback();
+			} else {
+				setTimeout(idleCallback, delay);
+			}
+		};
+	};
+
+	//based on http://modernjavascript.blogspot.de/2013/08/building-better-debounce.html
+	var debounce = function(func) {
+		var timeout, timestamp;
+		var wait = 99;
+		var run = function(){
+			timeout = null;
+			func();
+		};
+		var later = function() {
+			var last = Date.now() - timestamp;
+
+			if (last < wait) {
+				setTimeout(later, wait - last);
+			} else {
+				(requestIdleCallback || run)(run);
+			}
+		};
+
+		return function() {
+			timestamp = Date.now();
+
+			if (!timeout) {
+				timeout = setTimeout(later, wait);
+			}
+		};
+	};
+
+	var loader = (function(){
+		var preloadElems, isCompleted, resetPreloadingTimer, loadMode, started;
+
+		var eLvW, elvH, eLtop, eLleft, eLright, eLbottom, isBodyHidden;
+
+		var regImg = /^img$/i;
+		var regIframe = /^iframe$/i;
+
+		var supportScroll = ('onscroll' in window) && !(/(gle|ing)bot/.test(navigator.userAgent));
+
+		var shrinkExpand = 0;
+		var currentExpand = 0;
+
+		var isLoading = 0;
+		var lowRuns = -1;
+
+		var resetPreloading = function(e){
+			isLoading--;
+			if(!e || isLoading < 0 || !e.target){
+				isLoading = 0;
+			}
+		};
+
+		var isVisible = function (elem) {
+			if (isBodyHidden == null) {
+				isBodyHidden = getCSS(document.body, 'visibility') == 'hidden';
+			}
+
+			return isBodyHidden || !(getCSS(elem.parentNode, 'visibility') == 'hidden' && getCSS(elem, 'visibility') == 'hidden');
+		};
+
+		var isNestedVisible = function(elem, elemExpand){
+			var outerRect;
+			var parent = elem;
+			var visible = isVisible(elem);
+
+			eLtop -= elemExpand;
+			eLbottom += elemExpand;
+			eLleft -= elemExpand;
+			eLright += elemExpand;
+
+			while(visible && (parent = parent.offsetParent) && parent != document.body && parent != docElem){
+				visible = ((getCSS(parent, 'opacity') || 1) > 0);
+
+				if(visible && getCSS(parent, 'overflow') != 'visible'){
+					outerRect = parent.getBoundingClientRect();
+					visible = eLright > outerRect.left &&
+						eLleft < outerRect.right &&
+						eLbottom > outerRect.top - 1 &&
+						eLtop < outerRect.bottom + 1
+					;
+				}
+			}
+
+			return visible;
+		};
+
+		var checkElements = function() {
+			var eLlen, i, rect, autoLoadElem, loadedSomething, elemExpand, elemNegativeExpand, elemExpandVal,
+				beforeExpandVal, defaultExpand, preloadExpand, hFac;
+			var lazyloadElems = lazysizes.elements;
+
+			if((loadMode = lazySizesCfg.loadMode) && isLoading < 8 && (eLlen = lazyloadElems.length)){
+
+				i = 0;
+
+				lowRuns++;
+
+				for(; i < eLlen; i++){
+
+					if(!lazyloadElems[i] || lazyloadElems[i]._lazyRace){continue;}
+
+					if(!supportScroll || (lazysizes.prematureUnveil && lazysizes.prematureUnveil(lazyloadElems[i]))){unveilElement(lazyloadElems[i]);continue;}
+
+					if(!(elemExpandVal = lazyloadElems[i][_getAttribute]('data-expand')) || !(elemExpand = elemExpandVal * 1)){
+						elemExpand = currentExpand;
+					}
+
+					if (!defaultExpand) {
+						defaultExpand = (!lazySizesCfg.expand || lazySizesCfg.expand < 1) ?
+							docElem.clientHeight > 500 && docElem.clientWidth > 500 ? 500 : 370 :
+							lazySizesCfg.expand;
+
+						lazysizes._defEx = defaultExpand;
+
+						preloadExpand = defaultExpand * lazySizesCfg.expFactor;
+						hFac = lazySizesCfg.hFac;
+						isBodyHidden = null;
+
+						if(currentExpand < preloadExpand && isLoading < 1 && lowRuns > 2 && loadMode > 2 && !document.hidden){
+							currentExpand = preloadExpand;
+							lowRuns = 0;
+						} else if(loadMode > 1 && lowRuns > 1 && isLoading < 6){
+							currentExpand = defaultExpand;
+						} else {
+							currentExpand = shrinkExpand;
+						}
+					}
+
+					if(beforeExpandVal !== elemExpand){
+						eLvW = innerWidth + (elemExpand * hFac);
+						elvH = innerHeight + elemExpand;
+						elemNegativeExpand = elemExpand * -1;
+						beforeExpandVal = elemExpand;
+					}
+
+					rect = lazyloadElems[i].getBoundingClientRect();
+
+					if ((eLbottom = rect.bottom) >= elemNegativeExpand &&
+						(eLtop = rect.top) <= elvH &&
+						(eLright = rect.right) >= elemNegativeExpand * hFac &&
+						(eLleft = rect.left) <= eLvW &&
+						(eLbottom || eLright || eLleft || eLtop) &&
+						(lazySizesCfg.loadHidden || isVisible(lazyloadElems[i])) &&
+						((isCompleted && isLoading < 3 && !elemExpandVal && (loadMode < 3 || lowRuns < 4)) || isNestedVisible(lazyloadElems[i], elemExpand))){
+						unveilElement(lazyloadElems[i]);
+						loadedSomething = true;
+						if(isLoading > 9){break;}
+					} else if(!loadedSomething && isCompleted && !autoLoadElem &&
+						isLoading < 4 && lowRuns < 4 && loadMode > 2 &&
+						(preloadElems[0] || lazySizesCfg.preloadAfterLoad) &&
+						(preloadElems[0] || (!elemExpandVal && ((eLbottom || eLright || eLleft || eLtop) || lazyloadElems[i][_getAttribute](lazySizesCfg.sizesAttr) != 'auto')))){
+						autoLoadElem = preloadElems[0] || lazyloadElems[i];
+					}
+				}
+
+				if(autoLoadElem && !loadedSomething){
+					unveilElement(autoLoadElem);
+				}
+			}
+		};
+
+		var throttledCheckElements = throttle(checkElements);
+
+		var switchLoadingClass = function(e){
+			var elem = e.target;
+
+			if (elem._lazyCache) {
+				delete elem._lazyCache;
+				return;
+			}
+
+			resetPreloading(e);
+			addClass(elem, lazySizesCfg.loadedClass);
+			removeClass(elem, lazySizesCfg.loadingClass);
+			addRemoveLoadEvents(elem, rafSwitchLoadingClass);
+			triggerEvent(elem, 'lazyloaded');
+		};
+		var rafedSwitchLoadingClass = rAFIt(switchLoadingClass);
+		var rafSwitchLoadingClass = function(e){
+			rafedSwitchLoadingClass({target: e.target});
+		};
+
+		var changeIframeSrc = function(elem, src){
+			var loadMode = elem.getAttribute('data-load-mode') || lazySizesCfg.iframeLoadMode;
+
+			// loadMode can be also a string!
+			if (loadMode == 0) {
+				elem.contentWindow.location.replace(src);
+			} else if (loadMode == 1) {
+				elem.src = src;
+			}
+		};
+
+		var handleSources = function(source){
+			var customMedia;
+
+			var sourceSrcset = source[_getAttribute](lazySizesCfg.srcsetAttr);
+
+			if( (customMedia = lazySizesCfg.customMedia[source[_getAttribute]('data-media') || source[_getAttribute]('media')]) ){
+				source.setAttribute('media', customMedia);
+			}
+
+			if(sourceSrcset){
+				source.setAttribute('srcset', sourceSrcset);
+			}
+		};
+
+		var lazyUnveil = rAFIt(function (elem, detail, isAuto, sizes, isImg){
+			var src, srcset, parent, isPicture, event, firesLoad;
+
+			if(!(event = triggerEvent(elem, 'lazybeforeunveil', detail)).defaultPrevented){
+
+				if(sizes){
+					if(isAuto){
+						addClass(elem, lazySizesCfg.autosizesClass);
+					} else {
+						elem.setAttribute('sizes', sizes);
+					}
+				}
+
+				srcset = elem[_getAttribute](lazySizesCfg.srcsetAttr);
+				src = elem[_getAttribute](lazySizesCfg.srcAttr);
+
+				if(isImg) {
+					parent = elem.parentNode;
+					isPicture = parent && regPicture.test(parent.nodeName || '');
+				}
+
+				firesLoad = detail.firesLoad || (('src' in elem) && (srcset || src || isPicture));
+
+				event = {target: elem};
+
+				addClass(elem, lazySizesCfg.loadingClass);
+
+				if(firesLoad){
+					clearTimeout(resetPreloadingTimer);
+					resetPreloadingTimer = setTimeout(resetPreloading, 2500);
+					addRemoveLoadEvents(elem, rafSwitchLoadingClass, true);
+				}
+
+				if(isPicture){
+					forEach.call(parent.getElementsByTagName('source'), handleSources);
+				}
+
+				if(srcset){
+					elem.setAttribute('srcset', srcset);
+				} else if(src && !isPicture){
+					if(regIframe.test(elem.nodeName)){
+						changeIframeSrc(elem, src);
+					} else {
+						elem.src = src;
+					}
+				}
+
+				if(isImg && (srcset || isPicture)){
+					updatePolyfill(elem, {src: src});
+				}
+			}
+
+			if(elem._lazyRace){
+				delete elem._lazyRace;
+			}
+			removeClass(elem, lazySizesCfg.lazyClass);
+
+			rAF(function(){
+				// Part of this can be removed as soon as this fix is older: https://bugs.chromium.org/p/chromium/issues/detail?id=7731 (2015)
+				var isLoaded = elem.complete && elem.naturalWidth > 1;
+
+				if( !firesLoad || isLoaded){
+					if (isLoaded) {
+						addClass(elem, lazySizesCfg.fastLoadedClass);
+					}
+					switchLoadingClass(event);
+					elem._lazyCache = true;
+					setTimeout(function(){
+						if ('_lazyCache' in elem) {
+							delete elem._lazyCache;
+						}
+					}, 9);
+				}
+				if (elem.loading == 'lazy') {
+					isLoading--;
+				}
+			}, true);
+		});
+
+		/**
+		 *
+		 * @param elem { Element }
+		 */
+		var unveilElement = function (elem){
+			if (elem._lazyRace) {return;}
+			var detail;
+
+			var isImg = regImg.test(elem.nodeName);
+
+			//allow using sizes="auto", but don't use. it's invalid. Use data-sizes="auto" or a valid value for sizes instead (i.e.: sizes="80vw")
+			var sizes = isImg && (elem[_getAttribute](lazySizesCfg.sizesAttr) || elem[_getAttribute]('sizes'));
+			var isAuto = sizes == 'auto';
+
+			if( (isAuto || !isCompleted) && isImg && (elem[_getAttribute]('src') || elem.srcset) && !elem.complete && !hasClass(elem, lazySizesCfg.errorClass) && hasClass(elem, lazySizesCfg.lazyClass)){return;}
+
+			detail = triggerEvent(elem, 'lazyunveilread').detail;
+
+			if(isAuto){
+				 autoSizer.updateElem(elem, true, elem.offsetWidth);
+			}
+
+			elem._lazyRace = true;
+			isLoading++;
+
+			lazyUnveil(elem, detail, isAuto, sizes, isImg);
+		};
+
+		var afterScroll = debounce(function(){
+			lazySizesCfg.loadMode = 3;
+			throttledCheckElements();
+		});
+
+		var altLoadmodeScrollListner = function(){
+			if(lazySizesCfg.loadMode == 3){
+				lazySizesCfg.loadMode = 2;
+			}
+			afterScroll();
+		};
+
+		var onload = function(){
+			if(isCompleted){return;}
+			if(Date.now() - started < 999){
+				setTimeout(onload, 999);
+				return;
+			}
+
+
+			isCompleted = true;
+
+			lazySizesCfg.loadMode = 3;
+
+			throttledCheckElements();
+
+			addEventListener('scroll', altLoadmodeScrollListner, true);
+		};
+
+		return {
+			_: function(){
+				started = Date.now();
+
+				lazysizes.elements = document.getElementsByClassName(lazySizesCfg.lazyClass);
+				preloadElems = document.getElementsByClassName(lazySizesCfg.lazyClass + ' ' + lazySizesCfg.preloadClass);
+
+				addEventListener('scroll', throttledCheckElements, true);
+
+				addEventListener('resize', throttledCheckElements, true);
+
+				addEventListener('pageshow', function (e) {
+					if (e.persisted) {
+						var loadingElements = document.querySelectorAll('.' + lazySizesCfg.loadingClass);
+
+						if (loadingElements.length && loadingElements.forEach) {
+							requestAnimationFrame(function () {
+								loadingElements.forEach( function (img) {
+									if (img.complete) {
+										unveilElement(img);
+									}
+								});
+							});
+						}
+					}
+				});
+
+				if(window.MutationObserver){
+					new MutationObserver( throttledCheckElements ).observe( docElem, {childList: true, subtree: true, attributes: true} );
+				} else {
+					docElem[_addEventListener]('DOMNodeInserted', throttledCheckElements, true);
+					docElem[_addEventListener]('DOMAttrModified', throttledCheckElements, true);
+					setInterval(throttledCheckElements, 999);
+				}
+
+				addEventListener('hashchange', throttledCheckElements, true);
+
+				//, 'fullscreenchange'
+				['focus', 'mouseover', 'click', 'load', 'transitionend', 'animationend'].forEach(function(name){
+					document[_addEventListener](name, throttledCheckElements, true);
+				});
+
+				if((/d$|^c/.test(document.readyState))){
+					onload();
+				} else {
+					addEventListener('load', onload);
+					document[_addEventListener]('DOMContentLoaded', throttledCheckElements);
+					setTimeout(onload, 20000);
+				}
+
+				if(lazysizes.elements.length){
+					checkElements();
+					rAF._lsFlush();
+				} else {
+					throttledCheckElements();
+				}
+			},
+			checkElems: throttledCheckElements,
+			unveil: unveilElement,
+			_aLSL: altLoadmodeScrollListner,
+		};
+	})();
+
+
+	var autoSizer = (function(){
+		var autosizesElems;
+
+		var sizeElement = rAFIt(function(elem, parent, event, width){
+			var sources, i, len;
+			elem._lazysizesWidth = width;
+			width += 'px';
+
+			elem.setAttribute('sizes', width);
+
+			if(regPicture.test(parent.nodeName || '')){
+				sources = parent.getElementsByTagName('source');
+				for(i = 0, len = sources.length; i < len; i++){
+					sources[i].setAttribute('sizes', width);
+				}
+			}
+
+			if(!event.detail.dataAttr){
+				updatePolyfill(elem, event.detail);
+			}
+		});
+		/**
+		 *
+		 * @param elem {Element}
+		 * @param dataAttr
+		 * @param [width] { number }
+		 */
+		var getSizeElement = function (elem, dataAttr, width){
+			var event;
+			var parent = elem.parentNode;
+
+			if(parent){
+				width = getWidth(elem, parent, width);
+				event = triggerEvent(elem, 'lazybeforesizes', {width: width, dataAttr: !!dataAttr});
+
+				if(!event.defaultPrevented){
+					width = event.detail.width;
+
+					if(width && width !== elem._lazysizesWidth){
+						sizeElement(elem, parent, event, width);
+					}
+				}
+			}
+		};
+
+		var updateElementsSizes = function(){
+			var i;
+			var len = autosizesElems.length;
+			if(len){
+				i = 0;
+
+				for(; i < len; i++){
+					getSizeElement(autosizesElems[i]);
+				}
+			}
+		};
+
+		var debouncedUpdateElementsSizes = debounce(updateElementsSizes);
+
+		return {
+			_: function(){
+				autosizesElems = document.getElementsByClassName(lazySizesCfg.autosizesClass);
+				addEventListener('resize', debouncedUpdateElementsSizes);
+			},
+			checkElems: debouncedUpdateElementsSizes,
+			updateElem: getSizeElement
+		};
+	})();
+
+	var init = function(){
+		if(!init.i && document.getElementsByClassName){
+			init.i = true;
+			autoSizer._();
+			loader._();
+		}
+	};
+
+	setTimeout(function(){
+		if(lazySizesCfg.init){
+			init();
+		}
+	});
+
+	lazysizes = {
+		/**
+		 * @type { LazySizesConfigPartial }
+		 */
+		cfg: lazySizesCfg,
+		autoSizer: autoSizer,
+		loader: loader,
+		init: init,
+		uP: updatePolyfill,
+		aC: addClass,
+		rC: removeClass,
+		hC: hasClass,
+		fire: triggerEvent,
+		gW: getWidth,
+		rAF: rAF,
+	};
+
+	return lazysizes;
+}
+));
+
+
+/***/ }),
+
+/***/ 1770:
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(window, factory) {
+	if(!window) {return;}
+	var globalInstall = function(){
+		factory(window.lazySizes);
+		window.removeEventListener('lazyunveilread', globalInstall, true);
+	};
+
+	factory = factory.bind(null, window, window.document);
+
+	if( true && module.exports){
+		factory(__webpack_require__(7090));
+	} else if (true) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(7090)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}(typeof window != 'undefined' ?
+	window : 0, function(window, document, lazySizes) {
+	'use strict';
+
+	if(!window.addEventListener){return;}
+
+	var regDescriptors = /\s+(\d+)(w|h)\s+(\d+)(w|h)/;
+	var regCssFit = /parent-fit["']*\s*:\s*["']*(contain|cover|width)/;
+	var regCssObject = /parent-container["']*\s*:\s*["']*(.+?)(?=(\s|$|,|'|"|;))/;
+	var regPicture = /^picture$/i;
+	var cfg = lazySizes.cfg;
+
+	var getCSS = function (elem){
+		return (getComputedStyle(elem, null) || {});
+	};
+
+	var parentFit = {
+
+		getParent: function(element, parentSel){
+			var parent = element;
+			var parentNode = element.parentNode;
+
+			if((!parentSel || parentSel == 'prev') && parentNode && regPicture.test(parentNode.nodeName || '')){
+				parentNode = parentNode.parentNode;
+			}
+
+			if(parentSel != 'self'){
+				if(parentSel == 'prev'){
+					parent = element.previousElementSibling;
+				} else if(parentSel && (parentNode.closest || window.jQuery)){
+					parent = (parentNode.closest ?
+							parentNode.closest(parentSel) :
+							jQuery(parentNode).closest(parentSel)[0]) ||
+						parentNode
+					;
+				} else {
+					parent = parentNode;
+				}
+			}
+
+			return parent;
+		},
+
+		getFit: function(element){
+			var tmpMatch, parentObj;
+			var css = getCSS(element);
+			var content = css.content || css.fontFamily;
+			var obj = {
+				fit: element._lazysizesParentFit || element.getAttribute('data-parent-fit')
+			};
+
+			if(!obj.fit && content && (tmpMatch = content.match(regCssFit))){
+				obj.fit = tmpMatch[1];
+			}
+
+			if(obj.fit){
+				parentObj = element._lazysizesParentContainer || element.getAttribute('data-parent-container');
+
+				if(!parentObj && content && (tmpMatch = content.match(regCssObject))){
+					parentObj = tmpMatch[1];
+				}
+
+				obj.parent = parentFit.getParent(element, parentObj);
+
+
+			} else {
+				obj.fit = css.objectFit;
+			}
+
+			return obj;
+		},
+
+		getImageRatio: function(element){
+			var i, srcset, media, ratio, match, width, height;
+			var parent = element.parentNode;
+			var elements = parent && regPicture.test(parent.nodeName || '') ?
+					parent.querySelectorAll('source, img') :
+					[element]
+				;
+
+			for(i = 0; i < elements.length; i++){
+				element = elements[i];
+				srcset = element.getAttribute(cfg.srcsetAttr) || element.getAttribute('srcset') || element.getAttribute('data-pfsrcset') || element.getAttribute('data-risrcset') || '';
+				media = element._lsMedia || element.getAttribute('media');
+				media = cfg.customMedia[element.getAttribute('data-media') || media] || media;
+
+				if(srcset && (!media || (window.matchMedia && matchMedia(media) || {}).matches )){
+					ratio = parseFloat(element.getAttribute('data-aspectratio'));
+
+					if (!ratio) {
+						match = srcset.match(regDescriptors);
+
+						if (match) {
+							if(match[2] == 'w'){
+								width = match[1];
+								height = match[3];
+							} else {
+								width = match[3];
+								height = match[1];
+							}
+						} else {
+							width = element.getAttribute('width');
+							height = element.getAttribute('height');
+						}
+
+						ratio = width / height;
+					}
+
+					break;
+				}
+			}
+
+			return ratio;
+		},
+
+		calculateSize: function(element, width){
+			var displayRatio, height, imageRatio, retWidth;
+			var fitObj = this.getFit(element);
+			var fit = fitObj.fit;
+			var fitElem = fitObj.parent;
+
+			if(fit != 'width' && ((fit != 'contain' && fit != 'cover') || !(imageRatio = this.getImageRatio(element)))){
+				return width;
+			}
+
+			if(fitElem){
+				width = fitElem.clientWidth;
+			} else {
+				fitElem = element;
+			}
+
+			retWidth = width;
+
+			if(fit == 'width'){
+				retWidth = width;
+			} else {
+				height = fitElem.clientHeight;
+
+				if((displayRatio =  width / height) && ((fit == 'cover' && displayRatio < imageRatio) || (fit == 'contain' && displayRatio > imageRatio))){
+					retWidth = width * (imageRatio / displayRatio);
+				}
+			}
+
+			return retWidth;
+		}
+	};
+
+	lazySizes.parentFit = parentFit;
+
+	document.addEventListener('lazybeforesizes', function(e){
+		if(e.defaultPrevented || e.detail.instance != lazySizes){return;}
+
+		var element = e.target;
+		e.detail.width = parentFit.calculateSize(element, e.detail.width);
+	});
+}));
+
+
+/***/ }),
+
+/***/ 3379:
+/***/ ((module) => {
+
+"use strict";
+
+
+var stylesInDOM = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+
+  return updater;
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
+/***/ 569:
+/***/ ((module) => {
+
+"use strict";
+
+
+var memo = {};
+/* istanbul ignore next  */
+
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+
+    memo[target] = styleTarget;
+  }
+
+  return memo[target];
+}
+/* istanbul ignore next  */
+
+
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+
+  target.appendChild(style);
+}
+
+module.exports = insertBySelector;
+
+/***/ }),
+
+/***/ 9216:
+/***/ ((module) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+
+module.exports = insertStyleElement;
+
+/***/ }),
+
+/***/ 3565:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+
+/***/ 7795:
+/***/ ((module) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+
+  var needLayer = typeof obj.layer !== "undefined";
+
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+
+  css += obj.css;
+
+  if (needLayer) {
+    css += "}";
+  }
+
+  if (obj.media) {
+    css += "}";
+  }
+
+  if (obj.supports) {
+    css += "}";
+  }
+
+  var sourceMap = obj.sourceMap;
+
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  options.styleTagTransform(css, styleElement, options.options);
+}
+
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+
+  styleElement.parentNode.removeChild(styleElement);
+}
+/* istanbul ignore next  */
+
+
+function domAPI(options) {
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+
+module.exports = domAPI;
+
+/***/ }),
+
+/***/ 4589:
+/***/ ((module) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+
+module.exports = styleTagTransform;
+
+/***/ }),
+
+/***/ 4424:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "X3": () => (/* binding */ openDB)
+});
+
+// UNUSED EXPORTS: deleteDB, unwrap, wrap
+
+;// CONCATENATED MODULE: ./node_modules/idb/build/wrap-idb-value.js
+const instanceOfAny = (object, constructors) => constructors.some((c) => object instanceof c);
+
+let idbProxyableTypes;
+let cursorAdvanceMethods;
+// This is a function to prevent it throwing up in node environments.
+function getIdbProxyableTypes() {
+    return (idbProxyableTypes ||
+        (idbProxyableTypes = [
+            IDBDatabase,
+            IDBObjectStore,
+            IDBIndex,
+            IDBCursor,
+            IDBTransaction,
+        ]));
+}
+// This is a function to prevent it throwing up in node environments.
+function getCursorAdvanceMethods() {
+    return (cursorAdvanceMethods ||
+        (cursorAdvanceMethods = [
+            IDBCursor.prototype.advance,
+            IDBCursor.prototype.continue,
+            IDBCursor.prototype.continuePrimaryKey,
+        ]));
+}
+const cursorRequestMap = new WeakMap();
+const transactionDoneMap = new WeakMap();
+const transactionStoreNamesMap = new WeakMap();
+const transformCache = new WeakMap();
+const reverseTransformCache = new WeakMap();
+function promisifyRequest(request) {
+    const promise = new Promise((resolve, reject) => {
+        const unlisten = () => {
+            request.removeEventListener('success', success);
+            request.removeEventListener('error', error);
+        };
+        const success = () => {
+            resolve(wrap_idb_value_wrap(request.result));
+            unlisten();
+        };
+        const error = () => {
+            reject(request.error);
+            unlisten();
+        };
+        request.addEventListener('success', success);
+        request.addEventListener('error', error);
+    });
+    promise
+        .then((value) => {
+        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
+        // (see wrapFunction).
+        if (value instanceof IDBCursor) {
+            cursorRequestMap.set(value, request);
+        }
+        // Catching to avoid "Uncaught Promise exceptions"
+    })
+        .catch(() => { });
+    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
+    // is because we create many promises from a single IDBRequest.
+    reverseTransformCache.set(promise, request);
+    return promise;
+}
+function cacheDonePromiseForTransaction(tx) {
+    // Early bail if we've already created a done promise for this transaction.
+    if (transactionDoneMap.has(tx))
+        return;
+    const done = new Promise((resolve, reject) => {
+        const unlisten = () => {
+            tx.removeEventListener('complete', complete);
+            tx.removeEventListener('error', error);
+            tx.removeEventListener('abort', error);
+        };
+        const complete = () => {
+            resolve();
+            unlisten();
+        };
+        const error = () => {
+            reject(tx.error || new DOMException('AbortError', 'AbortError'));
+            unlisten();
+        };
+        tx.addEventListener('complete', complete);
+        tx.addEventListener('error', error);
+        tx.addEventListener('abort', error);
+    });
+    // Cache it for later retrieval.
+    transactionDoneMap.set(tx, done);
+}
+let idbProxyTraps = {
+    get(target, prop, receiver) {
+        if (target instanceof IDBTransaction) {
+            // Special handling for transaction.done.
+            if (prop === 'done')
+                return transactionDoneMap.get(target);
+            // Polyfill for objectStoreNames because of Edge.
+            if (prop === 'objectStoreNames') {
+                return target.objectStoreNames || transactionStoreNamesMap.get(target);
+            }
+            // Make tx.store return the only store in the transaction, or undefined if there are many.
+            if (prop === 'store') {
+                return receiver.objectStoreNames[1]
+                    ? undefined
+                    : receiver.objectStore(receiver.objectStoreNames[0]);
+            }
+        }
+        // Else transform whatever we get back.
+        return wrap_idb_value_wrap(target[prop]);
+    },
+    set(target, prop, value) {
+        target[prop] = value;
+        return true;
+    },
+    has(target, prop) {
+        if (target instanceof IDBTransaction &&
+            (prop === 'done' || prop === 'store')) {
+            return true;
+        }
+        return prop in target;
+    },
+};
+function replaceTraps(callback) {
+    idbProxyTraps = callback(idbProxyTraps);
+}
+function wrapFunction(func) {
+    // Due to expected object equality (which is enforced by the caching in `wrap`), we
+    // only create one new func per func.
+    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
+    if (func === IDBDatabase.prototype.transaction &&
+        !('objectStoreNames' in IDBTransaction.prototype)) {
+        return function (storeNames, ...args) {
+            const tx = func.call(unwrap(this), storeNames, ...args);
+            transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [storeNames]);
+            return wrap_idb_value_wrap(tx);
+        };
+    }
+    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
+    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
+    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
+    // with real promises, so each advance methods returns a new promise for the cursor object, or
+    // undefined if the end of the cursor has been reached.
+    if (getCursorAdvanceMethods().includes(func)) {
+        return function (...args) {
+            // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+            // the original object.
+            func.apply(unwrap(this), args);
+            return wrap_idb_value_wrap(cursorRequestMap.get(this));
+        };
+    }
+    return function (...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        return wrap_idb_value_wrap(func.apply(unwrap(this), args));
+    };
+}
+function transformCachableValue(value) {
+    if (typeof value === 'function')
+        return wrapFunction(value);
+    // This doesn't return, it just creates a 'done' promise for the transaction,
+    // which is later returned for transaction.done (see idbObjectHandler).
+    if (value instanceof IDBTransaction)
+        cacheDonePromiseForTransaction(value);
+    if (instanceOfAny(value, getIdbProxyableTypes()))
+        return new Proxy(value, idbProxyTraps);
+    // Return the same value back if we're not going to transform it.
+    return value;
+}
+function wrap_idb_value_wrap(value) {
+    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
+    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
+    if (value instanceof IDBRequest)
+        return promisifyRequest(value);
+    // If we've already transformed this value before, reuse the transformed value.
+    // This is faster, but it also provides object equality.
+    if (transformCache.has(value))
+        return transformCache.get(value);
+    const newValue = transformCachableValue(value);
+    // Not all types are transformed.
+    // These may be primitive types, so they can't be WeakMap keys.
+    if (newValue !== value) {
+        transformCache.set(value, newValue);
+        reverseTransformCache.set(newValue, value);
+    }
+    return newValue;
+}
+const unwrap = (value) => reverseTransformCache.get(value);
+
+
+
+;// CONCATENATED MODULE: ./node_modules/idb/build/index.js
+
+
+
+/**
+ * Open a database.
+ *
+ * @param name Name of the database.
+ * @param version Schema version.
+ * @param callbacks Additional callbacks.
+ */
+function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
+    const request = indexedDB.open(name, version);
+    const openPromise = wrap_idb_value_wrap(request);
+    if (upgrade) {
+        request.addEventListener('upgradeneeded', (event) => {
+            upgrade(wrap_idb_value_wrap(request.result), event.oldVersion, event.newVersion, wrap_idb_value_wrap(request.transaction), event);
+        });
+    }
+    if (blocked) {
+        request.addEventListener('blocked', (event) => blocked(
+        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event.newVersion, event));
+    }
+    openPromise
+        .then((db) => {
+        if (terminated)
+            db.addEventListener('close', () => terminated());
+        if (blocking) {
+            db.addEventListener('versionchange', (event) => blocking(event.oldVersion, event.newVersion, event));
+        }
+    })
+        .catch(() => { });
+    return openPromise;
+}
+/**
+ * Delete a database.
+ *
+ * @param name Name of the database.
+ */
+function deleteDB(name, { blocked } = {}) {
+    const request = indexedDB.deleteDatabase(name);
+    if (blocked) {
+        request.addEventListener('blocked', (event) => blocked(
+        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event));
+    }
+    return wrap(request).then(() => undefined);
+}
+
+const readMethods = ['get', 'getKey', 'getAll', 'getAllKeys', 'count'];
+const writeMethods = ['put', 'add', 'delete', 'clear'];
+const cachedMethods = new Map();
+function getMethod(target, prop) {
+    if (!(target instanceof IDBDatabase &&
+        !(prop in target) &&
+        typeof prop === 'string')) {
+        return;
+    }
+    if (cachedMethods.get(prop))
+        return cachedMethods.get(prop);
+    const targetFuncName = prop.replace(/FromIndex$/, '');
+    const useIndex = prop !== targetFuncName;
+    const isWrite = writeMethods.includes(targetFuncName);
+    if (
+    // Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
+    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) ||
+        !(isWrite || readMethods.includes(targetFuncName))) {
+        return;
+    }
+    const method = async function (storeName, ...args) {
+        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
+        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
+        let target = tx.store;
+        if (useIndex)
+            target = target.index(args.shift());
+        // Must reject if op rejects.
+        // If it's a write operation, must reject if tx.done rejects.
+        // Must reject with op rejection first.
+        // Must resolve with op value.
+        // Must handle both promises (no unhandled rejections)
+        return (await Promise.all([
+            target[targetFuncName](...args),
+            isWrite && tx.done,
+        ]))[0];
+    };
+    cachedMethods.set(prop, method);
+    return method;
+}
+replaceTraps((oldTraps) => ({
+    ...oldTraps,
+    get: (target, prop, receiver) => getMethod(target, prop) || oldTraps.get(target, prop, receiver),
+    has: (target, prop) => !!getMethod(target, prop) || oldTraps.has(target, prop),
+}));
+
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=576.bundle.js.map

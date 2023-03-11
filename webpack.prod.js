@@ -1,6 +1,6 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -27,10 +27,9 @@ module.exports = merge(common, {
         }
       }
     },
-    minimizer: [new UglifyJsPlugin({
-      cache: true,
-      parallel: true,
-    })],
+    minimizer: [
+      new CssMinimizerPlugin(),
+    ],
   },
   module: {
     rules: [
