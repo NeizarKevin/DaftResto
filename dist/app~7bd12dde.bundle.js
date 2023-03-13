@@ -433,7 +433,6 @@ var RestaurantDbSource = /*#__PURE__*/function () {
   }]);
   return RestaurantDbSource;
 }();
-;
 /* harmony default export */ const restaurantdb_source = (RestaurantDbSource);
 
 /***/ }),
@@ -485,11 +484,11 @@ var CONFIG = {
 /* harmony import */ var _components_skipcontent_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(991);
 /* harmony import */ var _components_skipcontent_component__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_components_skipcontent_component__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var _views_app__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(7313);
-/* harmony import */ var _utils_sw_register__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(3867);
-/* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(7090);
-/* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(lazysizes__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(1770);
-/* harmony import */ var lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _utils_sw_register__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(3867);
+/* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(7090);
+/* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(lazysizes__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(1770);
+/* harmony import */ var lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(lazysizes_plugins_parent_fit_ls_parent_fit__WEBPACK_IMPORTED_MODULE_20__);
  /* for async await transpile */
 
 
@@ -522,7 +521,7 @@ window.addEventListener('hashchange', function () {
 });
 window.addEventListener('load', function () {
   app.renderPage();
-  (0,_utils_sw_register__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Z)();
+  (0,_utils_sw_register__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Z)();
 });
 
 /***/ }),
