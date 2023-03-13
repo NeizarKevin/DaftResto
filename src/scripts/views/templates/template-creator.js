@@ -3,9 +3,9 @@ import CONFIG from '../../global/config';
 import DetailHelper from '../../utils/detail-helper';
 
 const createRestaurantDetailTemplate = (restaurant) => `
-<img class="restaurant-picture lazyload" crossorigin="anonymous" alt="${restaurant.name}" src="${
-  CONFIG.BASE_IMAGE_URL + restaurant.pictureId
-}" tabindex="0" >
+<img class="restaurant-picture lazyload" crossorigin="anonymous" alt="${
+  restaurant.name
+}" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" tabindex="0" >
 <div class="detailRestaurant">
     <div class="detailRestaurant-info">
         <div class="detailRestaurant-name">
@@ -25,13 +25,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <p class="restaurant-description">${restaurant.description}</p>
 </div>
 <div class="restaurant-categories">
-    ${restaurant.categories
-      .map(
-        (category) => `
-        <span class="restaurant-category-title">${category.name}</span>
-    `
-      )
-      .join('')}
+    ${restaurant.categories.map((category) => `<span class="restaurant-category-title">${category.name}</span>`).join('')}
 </div>
 
 <div class="detailRestaurant-menu">
@@ -40,24 +34,12 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant-menu">
         <ul>
             <h3>Food</h3>
-            ${restaurant.menus.foods
-              .map(
-                (food) => `
-            <li><p><i class="fa-solid fa-utensils"></i> ${food.name}</p></li>
-            `
-              )
-              .join('')}
+            ${restaurant.menus.foods.map((food) => `<li><p><i class="fa-solid fa-utensils"></i> ${food.name}</p></li>`).join('')}
         </ul>
 
         <ul>
             <h3>Beverage</h3>
-            ${restaurant.menus.drinks
-              .map(
-                (drink) => `
-            <li><p><i class="fas fa-cocktail"></i> ${drink.name}</p></li>
-            `
-              )
-              .join('')}
+            ${restaurant.menus.drinks.map((drink) => `<li><p><i class="fas fa-cocktail"></i> ${drink.name}</p></li>`).join('')}
         </ul>
     </div>
 </div>
@@ -82,12 +64,12 @@ const createRestaurantListTemplate = (restaurant) => `
     <article class="list-item">
     <a href="#/detail/${restaurant.id}">
           <div class="list-thumbnail">
-              <img class="list-item__thumbnail lazyload" tabindex="0" class="card-image" crossorigin="anonymous" alt="${ restaurant.name || '-' }" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
-              <p class="list-item_rate"><i title="ratings" class="fa fa-star card-rating"></i>  ${ restaurant.rating || '-' }</p>
+              <img class="list-item__thumbnail lazyload" tabindex="0" class="card-image" crossorigin="anonymous" alt="${restaurant.name || '-'}" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"/>
+              <p class="list-item_rate"><i title="ratings" class="fa fa-star card-rating"></i>  ${restaurant.rating || '-'}</p>
           </div>
           <div class="list-item__content">
               <p class="list-city"> ${restaurant.city || '-'}</p>
-              <h2 class="list-item__title">${restaurant.name || '-' }</h2>
+              <h2 class="list-item__title">${restaurant.name || '-'}</h2>
               <p class="list-item__description">${restaurant.description || '-'}...</p>
           </div>
     </a>
