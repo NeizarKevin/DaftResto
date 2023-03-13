@@ -227,11 +227,11 @@ var FavoriteMovieShowPresenter = /*#__PURE__*/function () {
 
 var createRestaurantDetailTemplate = function createRestaurantDetailTemplate(restaurant) {
   return "\n<img class=\"restaurant-picture lazyload\" crossorigin=\"anonymous\" alt=\"".concat(restaurant.name, "\" data-src=\"").concat(_global_config__WEBPACK_IMPORTED_MODULE_0__/* ["default"].BASE_IMAGE_URL */ .Z.BASE_IMAGE_URL + restaurant.pictureId, "\" tabindex=\"0\" >\n<div class=\"detailRestaurant\">\n    <div class=\"detailRestaurant-info\">\n        <div class=\"detailRestaurant-name\">\n            <h2><i class=\"fas fa-store\"></i> Restaurant Name</h2>\n            <p class=\"list-item__title\">").concat(restaurant.name, "</p>\n        </div>\n        <div class=\"detailRestaurant-address\">\n            <h2><i class=\"far fa-compass\"></i> Restaurant Address</h2>\n            <p>").concat(restaurant.address, ", ").concat(restaurant.city, "</p>\n        </div>\n        <div class=\"detailRestaurant-rate\">\n            <h2><i class=\"far fa-star\"></i> Restaurant Rate</h2>\n            <p>").concat(restaurant.rating, "</p>\n        </div>\n    </div>\n    <h2 class=\"restaurant-description-title\">Description</h2>\n    <p class=\"restaurant-description\">").concat(restaurant.description, "</p>\n</div>\n<div class=\"restaurant-categories\">\n    ").concat(restaurant.categories.map(function (category) {
-    return "\n        <span class=\"restaurant-category-title\">".concat(category.name, "</span>\n    ");
+    return "<span class=\"restaurant-category-title\">".concat(category.name, "</span>");
   }).join(''), "\n</div>\n\n<div class=\"detailRestaurant-menu\">\n    <h2>Menu</h2>\n\n    <div class=\"restaurant-menu\">\n        <ul>\n            <h3>Food</h3>\n            ").concat(restaurant.menus.foods.map(function (food) {
-    return "\n            <li><p><i class=\"fa-solid fa-utensils\"></i> ".concat(food.name, "</p></li>\n            ");
+    return "<li><p><i class=\"fa-solid fa-utensils\"></i> ".concat(food.name, "</p></li>");
   }).join(''), "\n        </ul>\n\n        <ul>\n            <h3>Beverage</h3>\n            ").concat(restaurant.menus.drinks.map(function (drink) {
-    return "\n            <li><p><i class=\"fas fa-cocktail\"></i> ".concat(drink.name, "</p></li>\n            ");
+    return "<li><p><i class=\"fas fa-cocktail\"></i> ".concat(drink.name, "</p></li>");
   }).join(''), "\n        </ul>\n    </div>\n</div>\n<h2 class=\"restaurant-review-title\">Customer Review</h2>\n").concat(_utils_detail_helper__WEBPACK_IMPORTED_MODULE_1__/* ["default"].eachCustomerReview */ .Z.eachCustomerReview(restaurant), "\n");
 };
 var createCustomerReviewTemplate = function createCustomerReviewTemplate(customerReview) {
