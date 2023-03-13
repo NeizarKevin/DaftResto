@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
@@ -39,9 +39,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
     }),
-    new MiniCssExtractPlugin(
-      
-    ),
+    new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -54,7 +52,7 @@ module.exports = {
       ],
     }),
     new ImageminWebpackPlugin({
-      plugins : [
+      plugins: [
         ImageminMozjpeg({
           quality: 50,
           progressive: true,

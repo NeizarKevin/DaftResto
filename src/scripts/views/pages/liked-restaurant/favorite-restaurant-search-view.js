@@ -1,8 +1,8 @@
 import { createRestaurantListTemplate } from '../../templates/template-creator';
 
 class FavoriteRestaurantSearchView {
-    getTemplate() {
-      return `
+  getTemplate() {
+    return `
       <div class="loader-container" id="loader-container">
       <div id="loader"></div>
     </div> 
@@ -15,35 +15,35 @@ class FavoriteRestaurantSearchView {
         </div>
     </div>
       `;
-    }
-  
-    runWhenUserIsSearching(callback) {
-      document.getElementById('query').addEventListener('change', (event) => {
-        callback(event.target.value);
-      });
-    }
+  }
 
-    showRestaurants(restaurants) {
-      this._showFavoriteRestaurants(restaurants);
-    }
+  runWhenUserIsSearching(callback) {
+    document.getElementById('query').addEventListener('change', (event) => {
+      callback(event.target.value);
+    });
+  }
 
-    showFavoriteRestaurants(restaurants = []) {
-        let html;
+  showRestaurants(restaurants) {
+    this._showFavoriteRestaurants(restaurants);
+  }
 
-        if (restaurants.length) {
-            html = restaurants.reduce((carry, restaurant) => carry.concat(createRestaurantListTemplate(restaurant)), '');
-        } else {
-            html = this._getEmptyRestaurantTemplate();
-        }
+  showFavoriteRestaurants(restaurants = []) {
+    let html;
 
-        document.getElementById('lists').innerHTML = html;
-
-        document.getElementById('lists').dispatchEvent(new Event('lists:updated'));
+    if (restaurants.length) {
+      html = restaurants.reduce((carry, restaurant) => carry.concat(createRestaurantListTemplate(restaurant)), '');
+    } else {
+      html = this._getEmptyRestaurantTemplate();
     }
 
-    _getEmptyRestaurantTemplate() {
-        return '<div class="restaurant-item__not__found">Tidak ada restaurant untuk ditampilkan</div>';
+    document.getElementById('lists').innerHTML = html;
+
+    document.getElementById('lists').dispatchEvent(new Event('lists:updated'));
+  }
+
+  _getEmptyRestaurantTemplate() {
+    return '<div class="restaurant-item__not__found">Tidak ada restaurant untuk ditampilkan</div>';
   }
 }
-  
-    export default FavoriteRestaurantSearchView;
+
+export default FavoriteRestaurantSearchView;
