@@ -6,7 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "serve": "http-server dist --port 8888",
+    "serve": "http-server dist --port 8880",
     "build-serve": "npm run build && npm run serve",
     "test": "karma start",
     "e2e": "codeceptjs run --steps",
@@ -52,7 +52,6 @@
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0",
     "whatwg-fetch": "^3.6.2",
-    "workbox-precaching": "^6.5.4",
     "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {

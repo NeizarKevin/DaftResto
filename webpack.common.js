@@ -38,6 +38,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
     }),
+
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
       patterns: [

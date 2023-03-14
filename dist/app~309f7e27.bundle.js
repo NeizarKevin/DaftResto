@@ -164,16 +164,16 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-var FavoriteMovieShowPresenter = /*#__PURE__*/function () {
-  function FavoriteMovieShowPresenter(_ref) {
+var FavoriteRestuarantShowPresenter = /*#__PURE__*/function () {
+  function FavoriteRestuarantShowPresenter(_ref) {
     var view = _ref.view,
       favoriteRestaurants = _ref.favoriteRestaurants;
-    _classCallCheck(this, FavoriteMovieShowPresenter);
+    _classCallCheck(this, FavoriteRestuarantShowPresenter);
     this._view = view;
     this._favoriteRestaurants = favoriteRestaurants;
     this._showFavoriteRestaurants();
   }
-  _createClass(FavoriteMovieShowPresenter, [{
+  _createClass(FavoriteRestuarantShowPresenter, [{
     key: "_showFavoriteRestaurants",
     value: function () {
       var _showFavoriteRestaurants2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -203,9 +203,9 @@ var FavoriteMovieShowPresenter = /*#__PURE__*/function () {
       this._view.showFavoriteRestaurants(restaurants);
     }
   }]);
-  return FavoriteMovieShowPresenter;
+  return FavoriteRestuarantShowPresenter;
 }();
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FavoriteMovieShowPresenter);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FavoriteRestuarantShowPresenter);
 
 /***/ }),
 

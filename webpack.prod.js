@@ -1,8 +1,8 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { merge } = require('webpack-merge');
-const path = require('path');
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -53,9 +53,9 @@ module.exports = merge(common, {
       analyzerMode: 'static',
       openAnalyzer: false,
     }),
-    new WorkboxWebpackPlugin.InjectManifest({
-      swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
+    new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
     }),
+    new CleanWebpackPlugin(),
   ],
 });

@@ -400,7 +400,7 @@ var swRegister = /*#__PURE__*/function () {
           console.log('Service Worker not supported in the browser');
           return _context.abrupt("return");
         case 3:
-          wb = new workbox_window__WEBPACK_IMPORTED_MODULE_0__/* .Workbox */ .ZW('/sw.bundle.js');
+          wb = new workbox_window__WEBPACK_IMPORTED_MODULE_0__/* .Workbox */ .ZW('./sw.bundle.js');
           _context.prev = 4;
           _context.next = 7;
           return wb.register();
