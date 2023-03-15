@@ -1,4 +1,4 @@
-class FavoriteMovieShowPresenter {
+class FavoriteRestuarantShowPresenter {
   constructor({ view, favoriteRestaurants }) {
     this._view = view;
     this._favoriteRestaurants = favoriteRestaurants;
@@ -16,4 +16,4 @@ class FavoriteMovieShowPresenter {
   }
 }
 
-export default FavoriteMovieShowPresenter;
+export default FavoriteRestuarantShowPresenter;
